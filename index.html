@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <link
+      rel="stylesheet"
+      href="style.css"
+    />
+    <title>Обрабатываем HTML-форму</title>
+  </head>
+  <body>
+    <h1 class="title">Обрабатываем HTML-форму</h1>
+    <form
+      class="form"
+      action="upload.php"
+      method="post"
+      enctype="multipart/form-data"
+    >
+    <div class="row">
+      <label for="file_name">Введите с каким именем сохранить файл на сервере:</label>
+      <input
+        class="file_name"
+        type="text"
+        id="file_name"
+        name="file_name"
+        placeholder="Имя файла"
+      />
+    </div>
+    <div class="row">
+
+      <label for="file">Выберите файл:</label>
+      <input
+      class="file"
+      type="file"
+      id="file"
+      name="file"
+      />
+    </div>
+      <button
+        class="btn"
+        type="submit"
+      />
+      Отправить файл
+      </button>
+    </form>
+  </body>
+</html>
